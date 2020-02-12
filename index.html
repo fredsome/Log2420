@@ -10,7 +10,7 @@
 body {
 background-color:rgba(242, 242, 242, 1);
 left:0px;
-width:1280px;
+width:1280px; 
 text-align:left;
 }  
 .Titre{
@@ -72,9 +72,9 @@ font-family:"Arial";
 font-weight:400;
 font-style:normal;
 font-size:16px;
+width: 70%;
 
-
-  margin-right:0px;
+margin-right: 0px;
   margin-left: 35px;
 
 height: 60px; 
@@ -86,6 +86,23 @@ padding-top: 20px;
 
 }
 
+
+.BouttonRadio{
+padding-top: 30px;
+
+  
+}
+.ToutLesButtonsRadio{
+  float: left;
+  width: 20%;
+  background-color: #f1f1f1;
+}
+.ToutlesSoustitre{
+  float: right;
+  width: 80%;
+ 
+
+}
 .SousSoustitreEcole{
 
   color:rgba(0, 0, 0, 0.537255);
@@ -189,8 +206,17 @@ padding :15px;
 <div class="row">
 
     <div class="Gauchecolumn">
-       
+  
+
         <h3 class="miniTitre">Élections</h3>
+      <div class="ToutLesButtonsRadio">
+          <div class="BouttonRadio">    <input type="radio" name="radio"></div>
+          <div class="BouttonRadio">    <input type="radio" name="radio"></div>
+          <div class="BouttonRadio">    <input type="radio" name="radio"></div>
+          <div class="BouttonRadio">    <input type="radio" name="radio"></div>
+            </div>
+
+      <div class ="ToutlesSoustitre">
         <div class="SousTitreEcole"> 43e élection fédérale
           <div class="SousSoustitreEcole">21 octobre 2019</div>
         </div>
@@ -203,7 +229,7 @@ padding :15px;
         <div class="SousTitreEcole"> Elections générales provinciales
           <div class="SousSoustitreEcole">7 avril 2014</div>
         </div>
-        
+        </div>
     </div>
   <div class="Millieucolumn">
      
@@ -222,6 +248,6 @@ padding :15px;
 </div>
 </div>
 
-
+<script src="main.js"></script>
 </body>
 </html>
