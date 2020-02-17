@@ -1,4 +1,30 @@
 
+var btn = document.createElement("input"); 
+var label =document.createElement("label");
+document.body.appendChild(btn);
+btn.set;
+btn.name ="radio";
+
+fetch('https://log2420-serve.herokuapp.com/JSON/output.json')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    console.log(data);
+    
+  for (var i =0;i< data.Elections.length ;i++){
+       document.getElementsByClassName('SousTitreEcole')[i].innerHTML = "<div>" + data.Elections[i].name + "</div>";
+           
+      
+    }
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+
+
+
+
 
 
 

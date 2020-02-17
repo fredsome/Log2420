@@ -68,43 +68,44 @@ height: 200px;
 }
 .SousTitreEcole{
 
+
+  
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
 font-size:16px;
-width: 70%;
+width: 90%;
 
-margin-right: 0px;
-  margin-left: 35px;
 
+left:1px;
 height: 60px; 
-float: left;
- 
- 
-padding-left: 20px;
+
 padding-top: 20px;
 
 }
-
-
 .BouttonRadio{
-padding-top: 30px;
-
+  left:1px;
+height: 60px; 
   
 }
 .ToutLesButtonsRadio{
+ 
   float: left;
-  width: 20%;
-  background-color: #f1f1f1;
+  width: 15%;
+  height: 240px;
+ 
+  background-color:rgb(56, 165, 42);
 }
 .ToutlesSoustitre{
+  
+  background-color:brown;
   float: right;
-  width: 80%;
+  width: 85%;
+  left:1px;
  
 
 }
 .SousSoustitreEcole{
-
   color:rgba(0, 0, 0, 0.537255);
   font-family:"Arial";
   font-weight:400;
@@ -121,10 +122,10 @@ margin-left: 90px;
 height: 700px; 
 box-shadow:1px 2px 2px rgba(0,0,0,0.219608);
 
-  float: left;
-  width: 23%;
- background-color: White;
-  padding-left: 20px;
+float: left;
+width: 23%;
+background-color: White;
+padding-left: 20px;
 }
 
 .miniTitre{
@@ -171,6 +172,15 @@ left :1150px;
 padding :15px;
 }
 
+input{
+position:relative;
+top: 22px;
+width :33px;
+height:33px;
+
+}
+
+
 .MenuIcon{
 position :absolute;
 top :5px;
@@ -206,30 +216,55 @@ padding :15px;
 <div class="row">
 
     <div class="Gauchecolumn">
-  
+      <h3 class="miniTitre">Élections</h3>
+        <div class="ToutLesButtonsRadio">    
+        
+       <div class="BouttonRadio"> <input type="radio" name="radio">  </div>
+        <div class="BouttonRadio">  <input type="radio" name="radio"> </div>
+         
+          <div class="BouttonRadio">  <input type="radio" name="radio"> </div>
+          <div class="BouttonRadio">  <input type="radio" name="radio"> </div>
+         
+       
+         </div>
 
-        <h3 class="miniTitre">Élections</h3>
-      <div class="ToutLesButtonsRadio">
-          <div class="BouttonRadio">    <input type="radio" name="radio"></div>
-          <div class="BouttonRadio">    <input type="radio" name="radio"></div>
-          <div class="BouttonRadio">    <input type="radio" name="radio"></div>
-          <div class="BouttonRadio">    <input type="radio" name="radio"></div>
-            </div>
 
-      <div class ="ToutlesSoustitre">
-        <div class="SousTitreEcole"> 43e élection fédérale
-          <div class="SousSoustitreEcole">21 octobre 2019</div>
+        <div class ="ToutlesSoustitre">
+        <div class="SousTitreEcole"> 
+          <label for ="radio" style="left: px;"></label><br><br>
+          <div id="SousSoustitreEcole"></div>
+          </div>
+    
+        
+
+
+
+        <div class="SousTitreEcole"> 
+          <label for ="radio"></label><br><br>
+          <div id="SousSoustitreEcole"></div>
+          </div>
+    
+        
+
+
+        <div class="SousTitreEcole"> 
+          <label for ="radio"></label><br><br>
+          <div id="SousSoustitreEcole"></div>
+          </div>
+    
+        
+
+
+        <div class="SousTitreEcole"> 
+          <label for ="radio"></label><br><br>
+          <div id="SousSoustitreEcole"></div>
+          </div>
+    
+        
+
+
         </div>
-        <div class="SousTitreEcole"> Elections générales provinciales
-          <div class="SousSoustitreEcole">1er octobre 2018</div>
-        </div>
-        <div class="SousTitreEcole"> 42e élection fédérale
-          <div class="SousSoustitreEcole">19 octobre 2015</div>
-        </div>
-        <div class="SousTitreEcole"> Elections générales provinciales
-          <div class="SousSoustitreEcole">7 avril 2014</div>
-        </div>
-        </div>
+
     </div>
   <div class="Millieucolumn">
      
