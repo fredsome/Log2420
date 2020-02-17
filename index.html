@@ -1,75 +1,92 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
- <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<style>
-* {
-  box-sizing: border-box;
-}
+﻿  <!DOCTYPE html>
+  <html>
+  <head>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
 
-body {
-background-color:rgba(242, 242, 242, 1);
-left:0px;
-width:1280px; 
-text-align:left;
-}  
-.Titre{
-font-family:"Arial";
-font-weight:400;
-font-style:normal;
-font-size:14px;
+  body {
+  background-color:rgba(242, 242, 242, 1);
+  left:0px;
+  width:1280px; 
+  text-align:left;
+  }  
+  .Titre{
+  font-family:"Arial";
+  font-weight:400;
+  font-style:normal;
+  font-size:14px;
 
-background-color:DodgerBlue;
-color:white;
-padding: 1px;
+  background-color:DodgerBlue;
+  color:white;
+  padding: 1px;
 
-position:absolute;
-top:0px;
-width:1280px;
-height:64px;
-right: 120px;
-left: 120px;
+  position:absolute;
+  top:0px;
+  width:1280px;
+  height:64px;
+  right: 120px;
+  left: 120px;
 
-}
+  }
 
 
-/* Clear floats after the columns */
-.row:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
+  /* Clear floats after the columns */
+  .row:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
 
-/*  Gauchecolumn */
-.Gauchecolumn {
+  /*  Gauchecolumn */
+  .Gauchecolumn {
 
-  margin-right: 0px;
-margin-left: 200px;
-box-shadow:1px 2px 2px rgba(0,0,0,0.219608);
-height: 700px; 
-  float: left;
-  width: 23%;
-  background-color: White;
-  padding-left: 20px;
-}
-
-/* Droit column */
-.Droitcolumn {   
-  margin-right: 180px;
-margin-left: 80px;
-
-height: 200px; 
-  float: right;
-  width: 17%;
- background-color: White;
-  padding-left: 20px;
+    margin-right: 0px;
+  margin-left: 200px;
   box-shadow:1px 2px 2px rgba(0,0,0,0.219608);
+  height: 700px; 
+    float: left;
+    width: 23%;
+    background-color: White;
+    padding-left: 20px;
+  }
 
-}
-.SousTitreEcole{
+  /* Droit column */
+  .Droitcolumn {   
+    margin-right: 180px;
+  margin-left: 80px;
+
+  height: 200px; 
+    float: right;
+    width: 17%;
+  background-color: White;
+    padding-left: 20px;
+    box-shadow:1px 2px 2px rgba(0,0,0,0.219608);
+
+  }
+  .SousTitreEcole{
 
 
-  
+    
+  font-family:"Arial";
+  font-weight:400;
+  font-style:normal;
+  font-size:16px;
+  width: 90%;
+
+
+  left:1px;
+  height: 60px; 
+
+  padding-top: 20px;
+
+  }
+  .SousTitreEcoleMillieu{
+
+
+    
 font-family:"Arial";
 font-weight:400;
 font-style:normal;
@@ -83,203 +100,305 @@ height: 60px;
 padding-top: 20px;
 
 }
-.BouttonRadio{
-  left:1px;
-height: 60px; 
+  .BouttonRadio{
+    left:1px;
+  height: 60px; 
+    
+  }
+  .BouttonRadioMilieu{
+    left:1px;
+  height: 60px; 
+    
+  }
+  .ToutLesButtons{
   
-}
-.ToutLesButtonsRadio{
- 
+    float: left;
+    width: 15%;
+    height: 240px;
+  
+  
+  }
+  .ToutLesButtonsMillieu{
+  
   float: left;
   width: 15%;
   height: 240px;
- 
- 
-}
-.ToutlesSoustitre{
-  
 
-  float: right;
-  width: 85%;
-  left:1px;
- 
 
 }
-.SousSoustitreEcole{
+  .ToutlesSoustitre{
+    
+
+    float: right;
+    width: 85%;
+    left:1px;
   
-  margin : -20px 30px 0px 0px;
-  color:rgba(0, 0, 0, 0.537255);
-  height: 20px;
+
+  }
+  .ToutlesSoustitreMillieu{
+    
+
+    float: right;
+    width: 85%;
+    left:1px;
+  
+
+  }
+  .SousSoustitreEcole{
+    
+    margin : -20px 30px 0px 0px;
+    color:rgba(0, 0, 0, 0.537255);
+    height: 20px;
 
 
+    font-family:"Arial";
+    font-weight:400;
+    font-style:normal;
+    font-size:14px;
+  }
+  .SousSoustitreEcoleMilieu{
+    
+    margin : -20px 30px 0px 0px;
+    color:rgba(0, 0, 0, 0.537255);
+    height: 20px;
+
+
+    font-family:"Arial";
+    font-weight:400;
+    font-style:normal;
+    font-size:14px;
+  }
+
+
+.hidden{
+display: none !important;
+
+}
+  /* Millieucolumn */
+  .Millieucolumn {
+  margin-right: 0px;
+  margin-left: 90px;
+  height: 700px; 
+  box-shadow:1px 2px 2px rgba(0,0,0,0.219608);
+
+  float: left;
+  width: 23%;
+  background-color: White;
+  padding-left: 20px;
+  }
+
+  .miniTitre{
   font-family:"Arial";
   font-weight:400;
   font-style:normal;
-  font-size:14px;
-}
+  font-size:20px;
 
-
-
-/* Millieucolumn */
-.Millieucolumn {
-margin-right: 0px;
-margin-left: 90px;
-height: 700px; 
-box-shadow:1px 2px 2px rgba(0,0,0,0.219608);
-
-float: left;
-width: 23%;
-background-color: White;
-padding-left: 20px;
-}
-
-.miniTitre{
-font-family:"Arial";
-font-weight:400;
-font-style:normal;
-font-size:20px;
-
-}
-.grid {
-position:relative;
-  top:90px;
-}
-
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
   }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
+  .grid {
+  position:relative;
+    top:90px;
   }
-}
-
-.scroller {
-  width: 1500px;
-  scrollbar-color: rebeccapurple green;
-  scrollbar-width: thin;
-}
 
 
-.TitrePosition{font-weight:400;font-style:normal;font-size:13px;left:200px;}
-.SearchIcon{
-position :absolute;
-top :5px;
-left :1150px;
-padding :15px;
-}
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
 
-input{
-position:relative;
-top: 22px;
-width :33px;
-height:33px;
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
 
-}
-
-
-.MenuIcon{
-position :absolute;
-top :5px;
-left :1210px;
-padding :15px;
-}
-
-</style>
-</head>
-<body>
-
-<div class="scroller">
-
-<div class="Titre">
-  <div class="TitrePosition">
-     <h1>PHAROS</h1>
-
-   </div>
-
- 
-  <div class="MenuIcon">
-  <i class='fas fa-ellipsis-v' style='font-size:17px'></i>
- </div>
- <div class="SearchIcon">
-  <i class='fas fa-search' style='font-size:17px'></i>
- </div>
-
-</div>
+  .scroller {
+    width: 1500px;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+  }
 
 
+  .TitrePosition{font-weight:400;font-style:normal;font-size:13px;left:200px;}
+  .SearchIcon{
+  position :absolute;
+  top :5px;
+  left :1150px;
+  padding :15px;
+  }
 
-<div class="grid">
-<div class="row">
+  input{
+  position:relative;
+  top: 22px;
+  width :33px;
+  height:33px;
 
-    <div class="Gauchecolumn">
-      <h3 class="miniTitre">Élections</h3>
-        <div class="ToutLesButtonsRadio">    
-        
-       <div class="BouttonRadio"> <input type="radio" name="radio">  </div>
-        <div class="BouttonRadio">  <input type="radio" name="radio"> </div>
-         
+  }
+
+
+  .MenuIcon{
+  position :absolute;
+  top :5px;
+  left :1210px;
+  padding :15px;
+  }
+
+  </style>
+  </head>
+  <body>
+
+  <div class="scroller">
+
+  <div class="Titre">
+    <div class="TitrePosition">
+      <h1>PHAROS</h1>
+
+    </div>
+
+  
+    <div class="MenuIcon">
+    <i class='fas fa-ellipsis-v' style='font-size:17px'></i>
+  </div>
+  <div class="SearchIcon">
+    <i class='fas fa-search' style='font-size:17px'></i>
+  </div>
+
+  </div>
+
+
+
+  <div class="grid">
+  <div class="row">
+
+      <div class="Gauchecolumn">
+        <h3 class="miniTitre">Élections</h3>
+         <div class="ToutLesButtons">    
+          
+          <div class="BouttonRadio"> <input type="radio" name="radio" checked>  </div>
+          <div class="BouttonRadio">  <input type="radio" name="radio"> </div>    
           <div class="BouttonRadio">  <input type="radio" name="radio"> </div>
           <div class="BouttonRadio">  <input type="radio" name="radio"> </div>
-         
-       
          </div>
 
 
-        <div class ="ToutlesSoustitre">
-        <div class="SousTitreEcole">
-          </div>
-          <div class="SousSoustitreEcole"></div>
-        
+            <div class ="ToutlesSoustitre">
+            <div class="SousTitreEcole"> </div>
+              <div class="SousSoustitreEcole"></div>
+            
 
+            <div class="SousTitreEcole"></div>
+              <div class="SousSoustitreEcole"></div>
+            
+            <div class="SousTitreEcole">  </div>
+              <div class="SousSoustitreEcole"> </div>
+            
 
+            <div class="SousTitreEcole">  </div>
+              <div class="SousSoustitreEcole"></div>
+            
 
-        <div class="SousTitreEcole">
-          </div>
-          <div class="SousSoustitreEcole"></div>
-        
+            </div>
 
-
-        <div class="SousTitreEcole"> 
-           </div>
-          <div class="SousSoustitreEcole"> </div>
-        
-
-
-        <div class="SousTitreEcole"> 
-          </div>
-          <div class="SousSoustitreEcole"></div>
-        
-
-
-        </div>
-
-    </div>
-  <div class="Millieucolumn">
-     
-     <h3 class="miniTitre">Partis politiques fédéreaux</h3>
- 
-  </div>
-
-  <div class="Droitcolumn">
+      </div>
+    <div class="Millieucolumn">
+      <h3 class="miniTitre">Partis politiques fédéreaux</h3>  
+           <div id="typeprovincial" style="display: none;">
+            <div class="ToutLesButtonsMillieu">    
+          
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox" checked="checked"></div>  
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox"></div>    
+              <div class="BouttonRadio"><input class="w3-check" type="checkbox"> </div>
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox"> </div>
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox"></div>    
+              <div class="BouttonRadio"><input class="w3-check" type="checkbox"> </div>
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox"> </div>
+             </div>
     
-     <h3 class="miniTitre">Actions</h3>
-   
+    
+                <div class ="ToutlesSoustitreMillieu">
+                <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+    
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+    
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+
+
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+    
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+    
+                </div>
+           </div>
+           <div id="typeFederaux">
+            <div class="ToutLesButtonsMillieu">    
+          
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox" checked="checked"></div>  
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox"></div>    
+              <div class="BouttonRadio"><input class="w3-check" type="checkbox"> </div>
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox"> </div>
+              <div class="BouttonRadio"> <input class="w3-check" type="checkbox"></div>    
+              <div class="BouttonRadio"><input class="w3-check" type="checkbox"> </div>
+             </div>
+    
+    
+                <div class ="ToutlesSoustitreMillieu">
+                <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+    
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+    
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+
+
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+                  <div class="SousTitreEcoleMillieu"> </div>
+                  <div class="SousSoustitreEcoleMilieu"></div>
+                
+    
+                </div>
+           </div>
+    
+    </div>
+
+    <div class="Droitcolumn">
+      
+      <h3 class="miniTitre">Actions</h3>
+    
+    </div>
+
+
+  </div>
+  </div>
   </div>
 
-
-</div>
-</div>
-</div>
-
-<script src="main.js"></script>
-</body>
-</html>
+  <script src="main.js"></script>
+  </body>
+  </html>

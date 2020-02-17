@@ -15,8 +15,7 @@ fetch('https://log2420-serve.herokuapp.com/JSON/output.json')
   for (var i =0;i< data.Elections.length ;i++){
        document.getElementsByClassName('SousTitreEcole')[i].innerHTML = "<div>" + data.Elections[i].name + "</div>";
        document.getElementsByClassName('SousSoustitreEcole')[i].innerHTML = "<div>" + data.Elections[i].date + "</div>";
-      
-      
+    
     }
   })
   .catch(function (err) {
@@ -24,20 +23,25 @@ fetch('https://log2420-serve.herokuapp.com/JSON/output.json')
   });
 
 
+  var CanvasP = document.getElementById("typeprovincial");
+  var CanvasF = document.getElementById("typeFederaux");
+  var listbutton = document.getElementsByClassName('BouttonRadio');
+listbutton[0].addEventListener("click",Federaux);
+listbutton[1].addEventListener("click",Provinciaux);
+listbutton[2].addEventListener("click",Federaux);
+listbutton[3].addEventListener("click",Provinciaux);
 
+typeFederaux
 
-
-
-
-var listbutton = document.getElementsByClassName('BouttonRadio');
-
-listbutton[0].addEventListener("click",add);
-listbutton[1].addEventListener("click",add);
-listbutton[2].addEventListener("click",add);
-listbutton[3].addEventListener("click",add);
-
-
-function add(){
-alert();
-
+function Federaux(){
+  
+    CanvasP.style.display ="none";
+    CanvasF.style.display ="block";
 }
+  
+function Provinciaux(){
+  CanvasP.style.display ="block";
+  CanvasF.style.display ="none";
+  
+}
+
