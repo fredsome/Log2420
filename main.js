@@ -14,7 +14,8 @@ fetch('https://log2420-serve.herokuapp.com/JSON/output.json')
     
   for (var i =0;i< data.Elections.length ;i++){
        document.getElementsByClassName('SousTitreEcole')[i].innerHTML = "<div>" + data.Elections[i].name + "</div>";
-           
+       document.getElementsByClassName('SousSoustitreEcole')[i].innerHTML = "<div>" + data.Elections[i].date + "</div>";
+      
       
     }
   })
